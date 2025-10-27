@@ -20,4 +20,20 @@ The original goal was to build all these converters, then have them generate an 
 - the src/config/config.yml paths are very important to get this up and running with  [converter-standard-note](https://github.com/circlecreativematrix/converter-standard-note) and the other converters.
 - the paths are double escaped for windows, but need to be forward slashes (/) for mac and linux.
 - pytest is funky on system paths. I run it in /tests/ and set my system path to look right above it. If you know how to solve that so pytest runs in the root directory , please feel free to let me know in an issue or comment.
-- 
+
+# Different Converters In Order Of Importance:
+# StandardNote
+- [converter-standard-note](https://github.com/circlecreativematrix/converter-standard-note)
+- it can actually describe a midi file precisely line by line , note by note.
+- it is a full text notation that can be used as an interim until midi is requested. This is what https://play.circlecreativematrix.com uses, then converts to nbef, then to midi and audio on the web browser.
+- in the alternative way to run, it sends nbef to the python music central to be encoded into midi or played live in a music yaml file (MAML) file. 
+# NBEF 
+## AtomicNote-Py: 
+### IntNote 
+  - triggers functions of notes based on the number hashmap you give it. `[ 0 1 2 3 4 5 6 88 8 0 1 2 3 4 5 6 88 2 2 1 0 ]` will play a partial scale in quarter notes, then call the 88 function, in this case it's set-note length to 8th notes,  then plays 8th notes partial scale, then calls the 88 function to set the notes to half notes, then plays E4, D4, C4 , assuming the set-key is C4.
+  - it's easy to encode and play with `[ atomicNote](https://github.com/circlecreativematrix/atomicnote-py/tree/3-16-2024_projects/py)`
+  - it's hard to read and decode without a middle logging step.
+### DoubleNote 
+ - like IntNote, but things like rests, notes, etc , are set as flags on the decimal side.
+   
+
