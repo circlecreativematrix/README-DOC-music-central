@@ -61,7 +61,7 @@ This javascript converts text like :
 playSnippet("2:1/8 1 0 1 2 2 2:1/4 1:1/8 1 1:1/4 2:1/8 4 4:1/4 2:1/8 1 0 1 2 2 2 2 1 1 2 1 0:1/1", "\n")
 ```
 into StandardNote:
-     ```
+```
 key_type:major,key_note:C4
 note:2,time:P+1/8
 note:1,time:P+1/8
@@ -89,7 +89,7 @@ note:1,time:P+1/8
 note:2,time:P+1/8
 note:1,time:P+1/8
 note:0,time:P+1/1
-     ```
+```
 - code: 
 ```javascript
    
