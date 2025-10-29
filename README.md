@@ -7,6 +7,7 @@ You first want to look at [play.circlecreativematrix.com](play.circlecreativemat
 `python3 -m http.server` or similar.
 - Study the format. That is Standard-Note.
 - Standard-Note is a key:value, comma separated format similar to csv, but not quite as it puts the headers into the keys.
+- to see what the options are, [look at the source](https://github.com/circlecreativematrix/converter-standard-note/blob/feature-get-variables-working/src/services/standard_to_nbef.go#L279)
 - each line is parsed as a separate section. if there are duplicates, right side overwrites left.
 - the initial wasm was made using tinygo and [converter-standard-note](https://github.com/circlecreativematrix/converter-standard-note)
   - follow the link for more information on installing and using that one. Look at tests to see the format in action.
