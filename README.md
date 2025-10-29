@@ -44,7 +44,7 @@ JSON format, holds most of the data right before MIDI. This is the intermediary 
   - notes look like :
   - ``` 0 1 2 3 4 5 6 7 8 9 88 2 87 1```
   - triggers functions of notes based on the number hashmap you give it. `[ 0 1 2 3 4 5 6 88 8 0 1 2 3 4 5 6 88 2 2 1 0 ]` will play a partial scale in quarter notes, then call the 88 function, in this case it's set-note length to 8th notes,  then plays 8th notes partial scale, then calls the 88 function to set the notes to half notes, then plays E4, D4, C4 , assuming the set-key is C4.
-  - it's easy to encode and play with `[ atomicNote](https://github.com/circlecreativematrix/atomicnote-py/tree/3-16-2024_projects/py)`
+  - it's easy to encode and play with [atomicNote](https://github.com/circlecreativematrix/atomicnote-py/tree/3-16-2024_projects/py)
   - it's hard to read and decode without a middle logging step.
 ### DoubleNote 
  - like IntNote, but things like rests, notes, etc , are set as flags on the decimal side.
