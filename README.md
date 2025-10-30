@@ -117,8 +117,7 @@ note:0,time:P+1/1
 ```
 this can then either be plugged into the already working play.circlecreativematrix.com , or be put through the alternate way. 
 ## further exploration
-- the converter-standard-note can have more tests to describe the output nbef.
-- the transformer-roman-chord can have more tests to describe the output standardNote.
-- Do I have all chord formations? Can I prove that with tests?
+- the transformer-roman-chord issues still need to be resolved.
+
   
 
