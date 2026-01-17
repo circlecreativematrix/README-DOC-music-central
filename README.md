@@ -2,7 +2,7 @@
 This is a main spot for instructions on how to run, ideas of what could be added, and ideas of what can be tested. 
 
 # How to Run: 
-You first want to look at [play.circlecreativematrix.com](play.circlecreativematrix.com) . At the time of this writing it is still operational ,
+You first want to look at [play.circlecreativematrix.com](https://play.circlecreativematrix.com) . At the time of this writing it is still operational ,
 - if the website is not operational and you want to continue, update a local [music-central-web](https://github.com/circlecreativematrix/music-central-web) project and serve it using
 `python3 -m http.server` or similar.
 - Study the format. That is Standard-Note.
